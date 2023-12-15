@@ -6,7 +6,7 @@ WHERE title = 'The Green Mile';
 
 -- 2
 UPDATE customer
-SET first_name = 'YourFirstName', last_name = 'YourLastName', address_id = (
+SET first_name = 'Danila', last_name = 'Kulinkovich', address_id = (
     SELECT address_id
     FROM address
     ORDER BY RANDOM()
