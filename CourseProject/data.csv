@@ -1,0 +1,49 @@
+Table,Columns,Values
+Users,user_id,name,email,password,created_at
+1,Luke Skywalker,luke@rebellion.com,force2024,2024-01-01 10:00:00
+2,Leia Organa,leia@rebellion.com,rebellion2024,2024-01-02 11:00:00
+3,Han Solo,han@falcon.com,falcon2024,2024-01-03 12:00:00
+4,Obi-Wan Kenobi,obiwan@jedi.com,kenobi2024,2024-01-04 13:00:00
+5,Darth Vader,vader@empire.com,darkside2024,2024-01-05 14:00:00
+GiftCertificates,certificate_id,code,value,status,created_at
+1,SW2024A,100.00,active,2024-02-01 10:00:00
+2,SW2024B,50.00,used,2024-02-02 11:00:00
+3,SW2024C,150.00,active,2024-02-03 12:00:00
+4,SW2024D,75.00,expired,2024-02-04 13:00:00
+5,SW2024E,200.00,active,2024-02-05 14:00:00
+Orders,order_id,user_id,order_date,total_amount
+1,1,2024-03-01 10:00:00,250.00
+2,2,2024-03-02 11:00:00,100.00
+3,3,2024-03-03 12:00:00,300.00
+4,4,2024-03-04 13:00:00,150.00
+5,5,2024-03-05 14:00:00,200.00
+OrderItems,order_item_id,order_id,product_id,quantity,price
+1,1,1,2,50.00
+2,1,2,1,150.00
+3,2,3,1,100.00
+4,3,4,3,100.00
+5,4,5,1,150.00
+Products,product_id,name,description,price,stock,created_at
+1,Lightsaber,Standard Jedi lightsaber,50.00,100,2024-01-01 10:00:00
+2,X-wing,Rebel Alliance starfighter,150.00,10,2024-01-02 11:00:00
+3,Blaster,Standard issue blaster,100.00,200,2024-01-03 12:00:00
+4,TIE Fighter,Imperial starfighter,100.00,5,2024-01-04 13:00:00
+5,Death Star,Imperial space station,150.00,1,2024-01-05 14:00:00
+Categories,category_id,name,description
+1,Weapons,All kinds of weapons
+2,Starfighters,Rebel and Imperial starfighters
+3,Space Stations,Massive space stations
+4,Accessories,Various accessories
+5,Armor,Protective gear
+ProductCategories,product_id,category_id
+1,1
+2,2
+3,1
+4,2
+5,3
+GiftCertificateRedemptions,redemption_id,certificate_id,order_id,redeemed_at
+1,1,1,2024-03-01 10:15:00
+2,2,2,2024-03-02 11:15:00
+3,3,3,2024-03-03 12:15:00
+4,4,4,2024-03-04 13:15:00
+5,5,5,2024-03-05 14:15:00
